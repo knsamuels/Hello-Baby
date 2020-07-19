@@ -1,6 +1,5 @@
 import UIKit
 import CoreData
-import SQLite3
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
