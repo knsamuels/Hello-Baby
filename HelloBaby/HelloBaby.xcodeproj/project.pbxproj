@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9396F1C24C21E2800194FDC /* NursingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9396F1B24C21E2800194FDC /* NursingTimer.swift */; };
+		C9D6EBD824BFD72100280A64 /* FeedingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D6EBD724BFD72100280A64 /* FeedingTableViewController.swift */; };
 		C9E8F20824BE45CF00DDE366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8F20724BE45CF00DDE366 /* AppDelegate.swift */; };
 		C9E8F20A24BE45CF00DDE366 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8F20924BE45CF00DDE366 /* SceneDelegate.swift */; };
 		C9E8F20F24BE45CF00DDE366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E8F20D24BE45CF00DDE366 /* Main.storyboard */; };
@@ -16,9 +18,12 @@
 		C9E8F22724BE6B3300DDE366 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8F22624BE6B3300DDE366 /* CoreDataStack.swift */; };
 		C9E8F22924BE6C9700DDE366 /* FeedingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8F22824BE6C9700DDE366 /* FeedingViewController.swift */; };
 		C9E8F22D24BE6D5200DDE366 /* Feeding+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8F22B24BE6D5200DDE366 /* Feeding+Convenience.swift */; };
+		C9EE1CEC24BE8409008B1722 /* FeedingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE1CEB24BE8409008B1722 /* FeedingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9396F1B24C21E2800194FDC /* NursingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NursingTimer.swift; sourceTree = "<group>"; };
+		C9D6EBD724BFD72100280A64 /* FeedingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingTableViewController.swift; sourceTree = "<group>"; };
 		C9E8F20424BE45CF00DDE366 /* HelloBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E8F20724BE45CF00DDE366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9E8F20924BE45CF00DDE366 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		C9E8F22624BE6B3300DDE366 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		C9E8F22824BE6C9700DDE366 /* FeedingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingViewController.swift; sourceTree = "<group>"; };
 		C9E8F22B24BE6D5200DDE366 /* Feeding+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feeding+Convenience.swift"; sourceTree = "<group>"; };
+		C9EE1CEB24BE8409008B1722 /* FeedingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		C9E8F20624BE45CF00DDE366 /* HelloBaby */ = {
 			isa = PBXGroup;
 			children = (
+				C9396F1B24C21E2800194FDC /* NursingTimer.swift */,
 				C9E8F22024BE45FE00DDE366 /* Model */,
 				C9E8F21F24BE45F800DDE366 /* Controllers */,
 				C9E8F21E24BE45F300DDE366 /* Views */,
@@ -101,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				C9E8F22824BE6C9700DDE366 /* FeedingViewController.swift */,
+				C9D6EBD724BFD72100280A64 /* FeedingTableViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -108,6 +116,7 @@
 		C9E8F22224BE460900DDE366 /* Model Controller  */ = {
 			isa = PBXGroup;
 			children = (
+				C9EE1CEB24BE8409008B1722 /* FeedingController.swift */,
 			);
 			path = "Model Controller ";
 			sourceTree = "<group>";
@@ -195,11 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D6EBD824BFD72100280A64 /* FeedingTableViewController.swift in Sources */,
+				C9396F1C24C21E2800194FDC /* NursingTimer.swift in Sources */,
 				C9E8F22D24BE6D5200DDE366 /* Feeding+Convenience.swift in Sources */,
 				C9E8F22724BE6B3300DDE366 /* CoreDataStack.swift in Sources */,
 				C9E8F21224BE45CF00DDE366 /* HelloBaby.xcdatamodeld in Sources */,
 				C9E8F20824BE45CF00DDE366 /* AppDelegate.swift in Sources */,
 				C9E8F20A24BE45CF00DDE366 /* SceneDelegate.swift in Sources */,
+				C9EE1CEC24BE8409008B1722 /* FeedingController.swift in Sources */,
 				C9E8F22924BE6C9700DDE366 /* FeedingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
