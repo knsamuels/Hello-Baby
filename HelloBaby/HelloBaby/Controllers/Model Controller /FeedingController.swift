@@ -1,11 +1,3 @@
-//
-//  FeedingController.swift
-//  HelloBaby
-//
-//  Created by Kristin Samuels  on 7/14/20.
-//  Copyright © 2020 Kristin Samuels . All rights reserved.
-//
-
 import Foundation
 import CoreData
 
