@@ -22,7 +22,8 @@ class FeedingController {
     }
     
     func createFeeding(volume: Double, date: Date, isBottleFeeding: Bool, duration: Double) {
-        Feeding(volume: volume, date: date, isBottleFeeding: isBottleFeeding, duration: duration)
+        Feeding(volume: volume, date: date, isBottleFeeding: isBottleFeeding,
+                isLeftSide: true, duration: duration)
         CoreDataStack.saveToPersistentStore()
     }
     

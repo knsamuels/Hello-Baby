@@ -11,4 +11,5 @@ extension Feeding {
     @NSManaged public var duration: NSNumber?
     @NSManaged public var isBottleFeeding: Bool
     @NSManaged public var volume: Double
+    @NSManaged public var isLeftSide: Bool
 }

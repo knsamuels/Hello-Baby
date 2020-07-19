@@ -4,9 +4,10 @@
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="duration" optional="YES" attributeType="Double" usesScalarValueType="NO"/>
         <attribute name="isBottleFeeding" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isLeftSide" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="volume" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
     <elements>
-        <element name="Feeding" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Feeding" positionX="-63" positionY="-18" width="128" height="118"/>
     </elements>
 </model>
