@@ -9,6 +9,6 @@ extension Feeding {
         self.volume = volume
         self.date = date
         self.isBottleFeeding = isBottleFeeding
-        self.duration = duration
+        self.duration = NSNumber(value: duration)
     }
 }

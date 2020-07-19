@@ -37,7 +37,7 @@ class FeedingController {
     func update(feeding: Feeding, volume: Double, date: Date, duration: Double) {
         feeding.volume = volume
         feeding.date = date
-        feeding.duration = duration
+        feeding.duration = NSNumber(value: duration)
         CoreDataStack.saveToPersistentStore()
     }
    
