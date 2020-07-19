@@ -8,19 +8,28 @@ class FeedingViewController: UIViewController {
     @IBOutlet weak var nursingContainerView: UIView!
     @IBOutlet weak var bottleContainerView: UIView!
     
-    // Mark- Both
-    @IBAction func feddingTypeValueChanged(_ sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0 {
-            UIView.animate(withDuration: 0.5) {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setVisibility(index: feedingTypeSegmentedControl.selectedSegmentIndex, animated: false)
+    }
+    
+    func setVisibility(index: Int, animated: Bool) {
+        if index == 0 {
+            UIView.animate(withDuration: animated ? 0.5 : 0) {
                 self.nursingContainerView.alpha = 1
                 self.bottleContainerView.alpha = 0
             }
-            
-        } else if sender.selectedSegmentIndex == 1 {
-            UIView.animate(withDuration: 0.5) {
+        } else if index == 1 {
+            UIView.animate(withDuration: animated ? 0.5 : 0) {
                 self.nursingContainerView.alpha = 0
                 self.bottleContainerView.alpha = 1
             }
         }
+    }
+    
+    // Mark- Both
+    @IBAction func feddingTypeValueChanged(_ sender: UISegmentedControl) {
+        setVisibility(index: sender.selectedSegmentIndex, animated: true)
     }
 }
