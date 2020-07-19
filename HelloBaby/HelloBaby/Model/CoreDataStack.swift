@@ -1,12 +1,11 @@
 import CoreData
 import Foundation
-    
+
 enum CoreDataStack {
     
     static let container: NSPersistentContainer = {
-        
         let container = NSPersistentContainer(name: "HelloBaby")
-        container.loadPersistentStores { (_, error) in
+        container.loadPersistentStores { _, error in
             if let error = error {
                 fatalError("\(error.localizedDescription)")
             }
@@ -17,6 +16,7 @@ enum CoreDataStack {
     static var context: NSManagedObjectContext {
         return container.viewContext
     }
+    
     static func saveToPersistentStore() {
         if context.hasChanges {
             do {
