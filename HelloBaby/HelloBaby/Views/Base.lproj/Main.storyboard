@@ -78,27 +78,28 @@
         <!--Item-->
         <scene sceneID="jlt-R6-gTf">
             <objects>
-                <viewController id="Xky-Vc-pf8" sceneMemberID="viewController">
+                <viewController id="Xky-Vc-pf8" customClass="ChartViewController" customModule="HelloBaby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mSA-mK-JjM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="charts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnh-bt-gZ7">
-                                <rect key="frame" x="114" y="370" width="121" height="163"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cfN-M8-wmM" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="87" y="137" width="240" height="543"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bnA-4H-97l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="GoY-QT-Ek1"/>
+                    <connections>
+                        <outlet property="barChart" destination="cfN-M8-wmM" id="Z16-EO-yQc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3GX-iE-2r9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="1171"/>
+            <point key="canvasLocation" x="1715.9420289855075" y="1170.5357142857142"/>
         </scene>
         <!--Item-->
         <scene sceneID="PSa-Ay-y8U">
