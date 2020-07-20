@@ -21,7 +21,7 @@ class FeedingTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         updateViews()
     }
-    
+ 
     // MARK: - Table view data source
     
     
@@ -32,7 +32,21 @@ class FeedingTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "feedingCell", for: indexPath)
         let feeding = FeedingController.shared.fetchedResultsControler.object(at: indexPath)
-        cell.textLabel?.text = "\(feeding.volume)"
+            if feeding.isBottleFeeding == true {
+            cell.textLabel?.text = "\(feeding.volume) ounces"
+        } else {
+            let time = (feeding.duration as! Int / 60)
+            let side = feeding.isLeftSide
+            if side == true && time == 1 {
+                cell.textLabel?.text = "\(time) minute on left side"
+            } else if side == false && time == 1 {
+                cell.textLabel?.text = "\(time) minute on right side"
+            } else if side == true && time > 1 {
+                cell.textLabel?.text =  "\(time) minutes on left side"
+            } else {
+                cell.textLabel?.text =  "\(time) minutes on right side"
+            }
+        }
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         
