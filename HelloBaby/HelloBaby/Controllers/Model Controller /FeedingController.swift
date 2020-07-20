@@ -21,16 +21,17 @@ class FeedingController {
         }
     }
     
-    func createFeeding(volume: Double, date: Date, isBottleFeeding: Bool, duration: Double) {
-        Feeding(volume: volume, date: date, isBottleFeeding: isBottleFeeding,
-                isLeftSide: true, duration: duration)
+    func createFeeding(volume: Double, date: Date, isBottleFeeding: Bool, duration: Double, isLeftSide: Bool) {
+        Feeding(volume: volume, date: date, isBottleFeeding: isBottleFeeding, isLeftSide: isLeftSide, duration: duration)
         CoreDataStack.saveToPersistentStore()
     }
     
-    func update(feeding: Feeding, volume: Double, date: Date, duration: Double) {
+    func update(feeding: Feeding, volume: Double, date: Date, duration: Double, isLeftSide: Bool) {
         feeding.volume = volume
         feeding.date = date
+        feeding.isLeftSide = isLeftSide
         feeding.duration = NSNumber(value: duration)
+        
         CoreDataStack.saveToPersistentStore()
     }
    

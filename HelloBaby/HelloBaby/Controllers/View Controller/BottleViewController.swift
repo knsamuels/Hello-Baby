@@ -22,7 +22,7 @@ class BottleViewController: UIViewController {
     }
     //MARK: Actions
     @IBAction func addFeedingTapped(_ sender: UIButton) {
-        FeedingController.shared.createFeeding(volume: volume, date: Date(), isBottleFeeding: true, duration: 0)
+        FeedingController.shared.createFeeding(volume: volume, date: Date(), isBottleFeeding: true, duration: 0, isLeftSide: true)
     }
     @IBAction func volumeSliderValueDidChange(_ sender: UISlider) {
         let newVolumeValue = (Double(sender.value) * 20).rounded() / 2
