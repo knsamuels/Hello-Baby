@@ -81,7 +81,6 @@
 				C9E8F21F24BE45F800DDE366 /* Controllers */,
 				C9E8F21E24BE45F300DDE366 /* Views */,
 				C9E8F22324BE462200DDE366 /* Resources */,
-				C9E8F21024BE45CF00DDE366 /* HelloBaby.xcdatamodeld */,
 			);
 			path = HelloBaby;
 			sourceTree = "<group>";
@@ -136,6 +135,7 @@
 		C9E8F22324BE462200DDE366 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C9E8F21024BE45CF00DDE366 /* HelloBaby.xcdatamodeld */,
 				C9E8F20724BE45CF00DDE366 /* AppDelegate.swift */,
 				C9E8F20924BE45CF00DDE366 /* SceneDelegate.swift */,
 				C9E8F21324BE45D300DDE366 /* Assets.xcassets */,
