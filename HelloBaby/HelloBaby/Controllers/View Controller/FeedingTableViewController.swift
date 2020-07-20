@@ -14,6 +14,7 @@ class FeedingTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         FeedingController.shared.fetchedResultsControler.delegate = self
+        tableView.reloadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
