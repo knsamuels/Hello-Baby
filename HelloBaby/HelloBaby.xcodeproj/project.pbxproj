@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9396F1C24C21E2800194FDC /* NursingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9396F1B24C21E2800194FDC /* NursingTimer.swift */; };
 		C94FBB8524C4EADF00518879 /* BottleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FBB8424C4EADF00518879 /* BottleViewController.swift */; };
 		C94FBBD224C4F07F00518879 /* Feeding+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FBBD024C4F07F00518879 /* Feeding+CoreDataClass.swift */; };
 		C94FBBD324C4F07F00518879 /* Feeding+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FBBD124C4F07F00518879 /* Feeding+CoreDataProperties.swift */; };
@@ -26,7 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C9396F1B24C21E2800194FDC /* NursingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NursingTimer.swift; sourceTree = "<group>"; };
 		C94FBB8424C4EADF00518879 /* BottleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleViewController.swift; sourceTree = "<group>"; };
 		C94FBBD024C4F07F00518879 /* Feeding+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feeding+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C94FBBD124C4F07F00518879 /* Feeding+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feeding+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 		C9E8F20624BE45CF00DDE366 /* HelloBaby */ = {
 			isa = PBXGroup;
 			children = (
-				C9396F1B24C21E2800194FDC /* NursingTimer.swift */,
 				C9E8F22024BE45FE00DDE366 /* Model */,
 				C9E8F21F24BE45F800DDE366 /* Controllers */,
 				C9E8F21E24BE45F300DDE366 /* Views */,
@@ -220,7 +217,6 @@
 				C94FBBD524C4FF2300518879 /* NursingViewController.swift in Sources */,
 				C94FBB8524C4EADF00518879 /* BottleViewController.swift in Sources */,
 				C9D6EBD824BFD72100280A64 /* FeedingTableViewController.swift in Sources */,
-				C9396F1C24C21E2800194FDC /* NursingTimer.swift in Sources */,
 				C9E8F22D24BE6D5200DDE366 /* Feeding+Convenience.swift in Sources */,
 				C9E8F22724BE6B3300DDE366 /* CoreDataStack.swift in Sources */,
 				C9E8F21224BE45CF00DDE366 /* HelloBaby.xcdatamodeld in Sources */,
